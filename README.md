@@ -1,5 +1,8 @@
 # Event listener
 
+[![Tests](https://github.com/parfeon/event-emitter/actions/workflows/run-tests.yml/badge.svg)](https://github.com/parfeon/event-emitter/actions/workflows/run-tests.yml) [![NPM Version](https://img.shields.io/npm/v/@randombytes/event-emitter.svg?style=flat)](https://www.npmjs.org/package/@randombytes/event-emitter) [![codecov](https://codecov.io/github/parfeon/event-emitter/branch/main/graph/badge.svg?token=frSpSxJL7a)](https://codecov.io/github/parfeon/event-emitter)
+
+
 Small and easy to use event listener / emitter with strongly-typed functions.
 
 ## Install
