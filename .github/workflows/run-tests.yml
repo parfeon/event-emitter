@@ -1,0 +1,21 @@
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+  tests:
+    name: Check code-style and run tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Install modules dependencies
+        run: yarn install
+      - name: Check code-style
+        run: npm run lint
+      - name: Run tests and gather code coverage
+        run: npm run test -- --collect-coverage
+      - name: Upload code coverage reports
+        uses: codecov/codecov-action@v3
+        if: ${{ success() }}
+
